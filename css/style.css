@@ -42,7 +42,14 @@ body {
 	font-size: 18px;
 	line-height: 27px;
 	text-align: center;
+	border: 3px solid transparent;
+	white-space: nowrap;
 	transition: all 0.4s ease;
+}
+
+.btn.active {
+	color: #fff;
+	background-color: #000;
 }
 
 .btn:hover {
@@ -128,6 +135,10 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+.main-content {
+	padding-bottom: 100px;
+}
 /* Header End */
 
 /* Hero Start */
@@ -179,6 +190,7 @@ body {
 
 .hero-list {
 	display: flex;
+	margin-bottom: 40px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -186,4 +198,64 @@ body {
 .hero-item:not(:last-child) {
 	margin-right: 20px;
 }
+
+.hero-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-inner-item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.hero-inner-img {
+	width: 410px;
+	height: 410px;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.hero-inner-title {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.hero-inner-text {
+	font-size: 24px;
+	line-height: 1.5;
+	font-family: 400px;
+	margin-bottom: 20px;
+}
+
+time {
+	font-weight: 400;
+	line-height: 1.4;
+	font-size: 24px;
+}
 /* Hero End */
+
+/* Footer Start */
+.site-footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #000;
+}
+
+.site-footer-container {
+	display: flex;
+	align-items: center;
+}
+
+.site-footer-left {
+	display: flex;
+	color: #fff;
+	margin-right: auto;
+	align-items: center;
+}
+
+.site-footer-left img {
+	margin-right: 14px;
+}
+/* Footer End */
